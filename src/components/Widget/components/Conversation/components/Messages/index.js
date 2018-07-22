@@ -21,6 +21,7 @@ class Messages extends Component {
 
   getComponentToRender = (message) => {
     const ComponentToRender = message.get('component');
+    console.log(message.get('sender'));
     if (message.get('type') === 'component') {
       return <ComponentToRender {...message.get('props')} />;
     }
@@ -32,7 +33,7 @@ class Messages extends Component {
       <div id="messages" className="messages-container">
         {
           this.props.messages.map((message, index) =>
-            <div className="message" key={index}>
+            <div className={`message ${message.get('sender')}Parent`} key={index}>
               {
                 this.props.profileAvatar &&
                 message.get('showAvatar') &&

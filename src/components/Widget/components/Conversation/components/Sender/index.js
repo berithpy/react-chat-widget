@@ -16,7 +16,7 @@ Sender.propTypes = {
   sendMessage: PropTypes.func,
   placeholder: PropTypes.string,
   disabledInput: PropTypes.bool,
-  autofocus: PropTypes.bool,
+  autofocus: PropTypes.bool
 };
 
 export default Sender;
