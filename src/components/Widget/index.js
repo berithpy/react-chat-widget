@@ -27,6 +27,9 @@ class Widget extends Component {
   }
 
   render() {
+    if (this.props.openChat) {
+      this.toggleConversation();
+    }
     return (
       <WidgetLayout
         onToggleConversation={this.toggleConversation}
@@ -55,7 +58,8 @@ Widget.propTypes = {
   showCloseButton: PropTypes.bool,
   fullScreenMode: PropTypes.bool,
   badge: PropTypes.number,
-  autofocus: PropTypes.bool
+  autofocus: PropTypes.bool,
+  openChat: PropTypes.bool
 };
 
 export default connect()(Widget);
