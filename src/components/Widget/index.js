@@ -28,7 +28,7 @@ class Widget extends Component {
 
   render() {
     if (this.props.openChat) {
-      this.toggleConversation();
+      setTimeout(() => { this.toggleConversation(); }, 1000);
     }
     return (
       <WidgetLayout
