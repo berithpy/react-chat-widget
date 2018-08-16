@@ -11,6 +11,11 @@ class Widget extends Component {
       this.props.dispatch(toggleChat());
     }
   }
+  componentDidMount() {
+    if (this.props.openChat) {
+      setTimeout(() => { this.toggleConversation(); }, 1000);
+    }
+  }
 
   toggleConversation = () => {
     this.props.dispatch(toggleChat());
@@ -27,9 +32,6 @@ class Widget extends Component {
   }
 
   render() {
-    if (this.props.openChat) {
-      setTimeout(() => { this.toggleConversation(); }, 1000);
-    }
     return (
       <WidgetLayout
         onToggleConversation={this.toggleConversation}
@@ -43,6 +45,7 @@ class Widget extends Component {
         fullScreenMode={this.props.fullScreenMode}
         badge={this.props.badge}
         autofocus={this.props.autofocus}
+        typingIndicator={this.props.typingIndicator}
       />
     );
   }
@@ -59,7 +62,8 @@ Widget.propTypes = {
   fullScreenMode: PropTypes.bool,
   badge: PropTypes.number,
   autofocus: PropTypes.bool,
-  openChat: PropTypes.bool
+  openChat: PropTypes.bool,
+  typingIndicator: PropTypes.bool
 };
 
 export default connect()(Widget);

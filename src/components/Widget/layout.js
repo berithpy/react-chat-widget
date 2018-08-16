@@ -24,6 +24,7 @@ const WidgetLayout = props =>
         disabledInput={props.disabledInput}
         autofocus={props.autofocus}
         titleAvatar={props.titleAvatar}
+        typingIndicator={props.typingIndicator}
       />
     }
     {
@@ -48,7 +49,8 @@ WidgetLayout.propTypes = {
   disabledInput: PropTypes.bool,
   fullScreenMode: PropTypes.bool,
   badge: PropTypes.number,
-  autofocus: PropTypes.bool
+  autofocus: PropTypes.bool,
+  typingIndicator: PropTypes.bool
 };
 
 export default connect(store => ({

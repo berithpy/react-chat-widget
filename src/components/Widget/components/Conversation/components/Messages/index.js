@@ -11,6 +11,11 @@ const scrollToBottom = () => {
 };
 
 class Messages extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { typingIndicator: props.typingIndicator };
+  }
+
   componentDidMount() {
     scrollToBottom();
   }
@@ -18,10 +23,8 @@ class Messages extends Component {
   componentDidUpdate() {
     scrollToBottom();
   }
-
   getComponentToRender = (message) => {
     const ComponentToRender = message.get('component');
-    console.log(message.get('sender'));
     if (message.get('type') === 'component') {
       return <ComponentToRender {...message.get('props')} />;
     }
@@ -45,14 +48,19 @@ class Messages extends Component {
             </div>
           )
         }
+        <div id="typing-indicator" className={this.props.typingIndicator ? "typing-indicator" : null}></div>
+
       </div>
+
+
     );
   }
 }
 
 Messages.propTypes = {
   messages: ImmutablePropTypes.listOf(ImmutablePropTypes.map),
-  profileAvatar: PropTypes.string
+  profileAvatar: PropTypes.string,
+  typingIndicator: PropTypes.bool
 };
 
 export default connect(store => ({
