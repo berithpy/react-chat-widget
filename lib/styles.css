@@ -397,6 +397,39 @@
     border-radius: 0;
     -ms-flex-negative: 0;
         flex-shrink: 0; } }
+.messages-container {
+  background-color: #fff;
+  height: 50vh;
+  max-height: 410px;
+  overflow-y: scroll;
+  padding-top: 10px; }
+
+.full-screen .messages-container {
+  height: 100%;
+  max-height: none; }
+
+@media screen and (max-width: 800px) {
+  .messages-container {
+    height: 100%;
+    max-height: none; } }
+
+.typing-indicator:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+  animation: ellipsis steps(4, end) 900ms infinite;
+  content: "\2026";
+  /* ascii code for the ellipsis character */
+  width: 0px; }
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em; } }
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em; } }
 .conversation-container .header {
   background-color: #35cce6;
   border-radius: 10px 10px 0 0;
@@ -464,39 +497,6 @@
   .conversation-container .close {
     width: 20px;
     height: 20px; } }
-.messages-container {
-  background-color: #fff;
-  height: 50vh;
-  max-height: 410px;
-  overflow-y: scroll;
-  padding-top: 10px; }
-
-.full-screen .messages-container {
-  height: 100%;
-  max-height: none; }
-
-@media screen and (max-width: 800px) {
-  .messages-container {
-    height: 100%;
-    max-height: none; } }
-
-.typing-indicator:after {
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: bottom;
-  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
-  animation: ellipsis steps(4, end) 900ms infinite;
-  content: "\2026";
-  /* ascii code for the ellipsis character */
-  width: 0px; }
-
-@keyframes ellipsis {
-  to {
-    width: 1.25em; } }
-
-@-webkit-keyframes ellipsis {
-  to {
-    width: 1.25em; } }
 .launcher .badge {
   position: fixed;
   top: -10px;
