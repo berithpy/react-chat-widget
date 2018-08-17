@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { toggleChat, addUserMessage } from 'actions';
-import { isBrowser, isMobile } from 'react-device-detect';
+import { isBrowser } from 'react-device-detect';
 
 import WidgetLayout from './layout';
 
@@ -13,7 +13,6 @@ class Widget extends Component {
     }
   }
   componentDidMount() {
-    console.log(isBrowser, isMobile);
     if (this.props.openChat && isBrowser) {
       setTimeout(() => { this.toggleConversation(); }, 1000);
     }
