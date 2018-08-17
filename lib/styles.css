@@ -172,129 +172,6 @@
     -webkit-transform: translateY(10px);
             transform: translateY(10px); } }
 
-.conversation-container {
-  -webkit-animation-delay: 0;
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-name: slide-in;
-  -webkit-animation-fill-mode: forwards;
-  /* this prevents the animation from restarting! */
-  -moz-animation-delay: 0;
-  -moz-animation-duration: 0.5s;
-  -moz-animation-name: slide-in;
-  -moz-animation-fill-mode: forwards;
-  /* this prevents the animation from restarting! */
-  animation-delay: 0;
-  animation-duration: 0.5s;
-  animation-name: slide-in;
-  animation-fill-mode: forwards;
-  /* this prevents the animation from restarting! */
-  border-radius: 10px;
-  -webkit-box-shadow: 0px 2px 10px 1px #b5b5b5;
-          box-shadow: 0px 2px 10px 1px #b5b5b5; }
-
-.slide-out {
-  -webkit-animation-delay: 0;
-  -webkit-animation-duration: 0.5s;
-  -webkit-animation-name: slide-out;
-  -webkit-animation-fill-mode: forwards;
-  /* this prevents the animation from restarting! */
-  -moz-animation-delay: 0;
-  -moz-animation-duration: 0.5s;
-  -moz-animation-name: slide-out;
-  -moz-animation-fill-mode: forwards;
-  /* this prevents the animation from restarting! */
-  animation-delay: 0;
-  animation-duration: 0.5s;
-  animation-name: slide-out;
-  animation-fill-mode: forwards;
-  /* this prevents the animation from restarting! */ }
-
-.full-screen .conversation-container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  height: 100%; }
-
-@media screen and (max-width: 800px) {
-  .conversation-container {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    height: 100%; } }
-@-webkit-keyframes rotation-lr {
-  from {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg); }
-  to {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); } }
-
-@keyframes rotation-lr {
-  from {
-    -webkit-transform: rotate(-90deg);
-            transform: rotate(-90deg); }
-  to {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); } }
-
-@-webkit-keyframes rotation-rl {
-  from {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
-  to {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); } }
-
-@keyframes rotation-rl {
-  from {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
-  to {
-    -webkit-transform: rotate(0);
-            transform: rotate(0); } }
-
-@-webkit-keyframes slide-in {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px); }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
-
-@keyframes slide-in {
-  from {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px); }
-  to {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
-
-@-webkit-keyframes slide-out {
-  from {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  to {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px); } }
-
-@keyframes slide-out {
-  from {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
-  to {
-    opacity: 0;
-    -webkit-transform: translateY(10px);
-            transform: translateY(10px); } }
-
 .launcher {
   -webkit-animation-delay: 0;
   -webkit-animation-duration: 0.5s;
@@ -367,69 +244,129 @@
     right: 0; }
   .hide-sm {
     display: none; } }
-.sender {
-  -ms-flex-align: center;
-      align-items: center;
+@-webkit-keyframes rotation-lr {
+  from {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@keyframes rotation-lr {
+  from {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg); }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@-webkit-keyframes rotation-rl {
+  from {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@keyframes rotation-rl {
+  from {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg); }
+  to {
+    -webkit-transform: rotate(0);
+            transform: rotate(0); } }
+
+@-webkit-keyframes slide-in {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@-webkit-keyframes slide-out {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); } }
+
+@keyframes slide-out {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); }
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px); } }
+
+.conversation-container {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: slide-in;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-name: slide-in;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0;
+  animation-duration: 0.5s;
+  animation-name: slide-in;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 2px 10px 1px #b5b5b5;
+          box-shadow: 0px 2px 10px 1px #b5b5b5; }
+
+.slide-out {
+  -webkit-animation-delay: 0;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-name: slide-out;
+  -webkit-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  -moz-animation-delay: 0;
+  -moz-animation-duration: 0.5s;
+  -moz-animation-name: slide-out;
+  -moz-animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */
+  animation-delay: 0;
+  animation-duration: 0.5s;
+  animation-name: slide-out;
+  animation-fill-mode: forwards;
+  /* this prevents the animation from restarting! */ }
+
+.full-screen .conversation-container {
   display: -ms-flexbox;
   display: flex;
-  background-color: #f4f7f9;
-  height: 45px;
-  padding: 5px;
-  border-radius: 0 0 10px 10px; }
-
-.new-message {
-  width: 100%;
-  border: 0;
-  background-color: #f4f7f9;
-  height: 30px;
-  padding-left: 15px; }
-  .new-message:focus {
-    outline: none; }
-
-.send {
-  background: #f4f7f9;
-  border: 0; }
-  .send .send-icon {
-    height: 25px; }
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 100%; }
 
 @media screen and (max-width: 800px) {
-  .sender {
-    border-radius: 0;
-    -ms-flex-negative: 0;
-        flex-shrink: 0; } }
-.messages-container {
-  background-color: #fff;
-  height: 50vh;
-  max-height: 410px;
-  overflow-y: scroll;
-  padding-top: 10px; }
-
-.full-screen .messages-container {
-  height: 100%;
-  max-height: none; }
-
-@media screen and (max-width: 800px) {
-  .messages-container {
-    height: 100%;
-    max-height: none; } }
-
-.typing-indicator:after {
-  overflow: hidden;
-  display: inline-block;
-  vertical-align: bottom;
-  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
-  animation: ellipsis steps(4, end) 900ms infinite;
-  content: "\2026";
-  /* ascii code for the ellipsis character */
-  width: 0px; }
-
-@keyframes ellipsis {
-  to {
-    width: 1.25em; } }
-
-@-webkit-keyframes ellipsis {
-  to {
-    width: 1.25em; } }
+  .conversation-container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    height: 100%; } }
 .conversation-container .header {
   background-color: #35cce6;
   border-radius: 10px 10px 0 0;
@@ -497,6 +434,69 @@
   .conversation-container .close {
     width: 20px;
     height: 20px; } }
+.sender {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f4f7f9;
+  height: 45px;
+  padding: 5px;
+  border-radius: 0 0 10px 10px; }
+
+.new-message {
+  width: 100%;
+  border: 0;
+  background-color: #f4f7f9;
+  height: 30px;
+  padding-left: 15px; }
+  .new-message:focus {
+    outline: none; }
+
+.send {
+  background: #f4f7f9;
+  border: 0; }
+  .send .send-icon {
+    height: 25px; }
+
+@media screen and (max-width: 800px) {
+  .sender {
+    border-radius: 0;
+    -ms-flex-negative: 0;
+        flex-shrink: 0; } }
+.messages-container {
+  background-color: #fff;
+  height: 50vh;
+  max-height: 410px;
+  overflow-y: scroll;
+  padding-top: 10px; }
+
+.full-screen .messages-container {
+  height: 100%;
+  max-height: none; }
+
+@media screen and (max-width: 800px) {
+  .messages-container {
+    height: 100%;
+    max-height: none; } }
+
+.typing-indicator:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4, end) 900ms infinite;
+  animation: ellipsis steps(4, end) 900ms infinite;
+  content: "\2026";
+  /* ascii code for the ellipsis character */
+  width: 0px; }
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em; } }
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em; } }
 .launcher .badge {
   position: fixed;
   top: -10px;

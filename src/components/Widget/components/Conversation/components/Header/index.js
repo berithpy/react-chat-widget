@@ -17,7 +17,7 @@ const Header = ({ title, subtitle, toggleChat, showCloseButton, titleAvatar }) =
         titleAvatar &&
         <img src={titleAvatar} className="avatar" alt="profile" />
       }
-      {title}</h4>
+      {title}<a href="mailto:feedback@civitasai.com">BETA</a></h4>
     <span>{subtitle}</span>
   </div>;
 
